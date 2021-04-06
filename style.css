@@ -22,12 +22,17 @@ body {
     letter-spacing: 1.3px;
 }
 
+.navbar a:hover {
+    color: darkblue;
+    cursor: pointer;
+}
+
 .menuoptions {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 300px;
+    margin-left: 18%;
 }
 
 .menuoptions a {
@@ -40,11 +45,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 300px;
+    margin-right: 18%;
 }
 
 .login a {
-    margin-right: 35px;
+    margin-left: 35px;
     color: rgb(106, 109, 117);
 }
 
@@ -92,6 +97,14 @@ body {
     margin-left: 50%;
     max-width: 200px;
     transform: translate(-50%, 0px);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.vidcenter a:hover, .signupborder:hover {
+    background-color: rgb(211, 86, 33);
+    border-color: rgb(211, 86, 33);
+    cursor: pointer;
 }
  
 .summary {
@@ -116,8 +129,21 @@ body {
     margin-left: 160px;
 }
 
-.choosemeal h1, .cook h1 , .unpack h1{
-    font-size: 50px;
+.choosemeal h2, .cook h2 , .unpack h2{
+    font-size: 46px;
+    font-weight: 700;
+    color: rgb(48, 50, 54);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.choosemeal p, .cook p, .unpack p {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(106, 109, 117);
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .unpack {
@@ -137,6 +163,10 @@ body {
 }
 
 .mealkitinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
     position: relative;
     left: 50%;
@@ -144,6 +174,43 @@ body {
     background-color: white;
     width: 850px;
     height: 1100px;
+    flex-wrap: nowrap;
+}
+
+.mealkitinfo h2 {
+    color: rgb(48, 50, 54);
+    font-size: 20px;
+    margin: 0;
+}
+
+.mealkitinforow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mealkitinfobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 275px;
+    padding: 80px 40px 80px 40px;
+}
+
+.mealkitinfobox h3 {
+    color: rgb(48, 50, 54);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.mealkitinfobox p {
+    color: rgb(106, 109, 117);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
 }
 
 .subscribe {
@@ -154,6 +221,19 @@ body {
     align-items: center;
 }
 
+.subscribe h2{
+    font-size: 30px;
+    color: rgb(48, 50, 54);
+    font-weight: 600;
+}
+
+.subscribe p{
+    color: rgb(106, 109, 117);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
 .chooseyourplan {
     color: white;
     background-color: rgb(46, 98, 175);
@@ -161,18 +241,51 @@ body {
     border-style: solid;
     border-width: 25px 80px 25px 80px;
     border-radius: 50px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.chooseyourplan:hover, .go:hover {
+    background-color: rgb(15, 52, 108);
+    border-color: rgb(15, 52, 108);
+    cursor: pointer;
 }
 
 .prefooter {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 100px;
     background-color: rgb(250, 251, 252);
     height: 175px;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 12%;
+    padding-right: 12%;
     border-top: 1px solid rgb(228,230,235);;
+}
+
+.prefooter h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #303236;
+}
+
+.prefooter .whatscooking, .prefooter .socialmedia, .prefooter .fromtheblog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.socialmediaicons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socialmediaicons img {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .dividerbar {
@@ -201,6 +314,46 @@ body {
     align-items: center;
 }
 
+.whatscooking p {
+    color: #6a6d75
+}
+
+.emaillist {
+    border: 1px solid rgb(221, 221, 221);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.emaillist input {
+    background-color: white;
+    border: 0;
+    outline: none;
+    margin-left: 15px;
+    height: 48px;
+    width: 575px;
+}
+
+::placeholder {
+    color: rgb(165, 165, 165);;
+}
+
+.go {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(36, 80, 145);
+    color: white;
+    border: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
 .fromtheblog div {
     display: flex;
     flex-direction: row;
@@ -214,6 +367,11 @@ body {
 
 .footercontainer {
     width: 65%;
+}
+
+.footercontainer p{
+    display: flex;
+
 }
 
 .leftfooterinfo {
@@ -230,10 +388,32 @@ body {
     margin-right: 55px;
 }
 
+.footercontainer span {
+    color: rgb(161, 188, 230);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 .col a {
     margin-bottom: 13px;
 }
 
+.col a:hover, .footercontainer span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.col img {
+    margin-bottom: 10px;
+}
+
+.col img:hover {
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
 .whitetext {
+    cursor: text !important;
+    text-decoration: none !important;
     color: white;
 }
