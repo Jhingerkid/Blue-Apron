@@ -286,6 +286,7 @@ body {
 .socialmediaicons img {
     margin-left: 15px;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .dividerbar {
@@ -339,7 +340,7 @@ body {
 }
 
 ::placeholder {
-    color: rgb(165, 165, 165);;
+    color: rgb(165, 165, 165);
 }
 
 .go {
@@ -357,6 +358,22 @@ body {
 .fromtheblog div {
     display: flex;
     flex-direction: row;
+}
+
+.blogpost {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.blogpost p {
+    color: #303236;
+    overflow: hidden;
+    width: 200px;
+    margin-left: 35px;
+    margin-top: 0px;
 }
 
 .footerinfo {
@@ -410,6 +427,12 @@ body {
 .col img:hover {
     cursor: pointer;
     margin-bottom: 3px;
+}
+
+.rightfooterinfo .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .whitetext {
